@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{article.title}}{% endblock %}
+
+{% block body %}
+<section class="categorie">
+    <article class="show">
+        <h1 class="titre">{{article.title}}</h1>
+        <div class="image"><img src="{{article.image}}"/>
+        <p class="slug">{{article.content}}</p>
+        <small>Ecrit le {{article.createdAt | date('d/m/y')}} à {{article.createdAt | date('H:i')}} </small>
+         <a href="{{path('blog_show', {'id': article.id}) }}">en savoir plus</a><br/><a href="{{path('blog_article')}}">Editer</a>
+    </article>
+    <article class="show">
+        <h1 class="titre">{{article.title}}</h1>
+        <div class="image"><img src="{{article.image}}"/>
+        <p class="slug">{{article.content}}</p>
+        <small>Ecrit le {{article.createdAt | date('d/m/y')}} à {{article.createdAt | date('H:i')}} </small>
+         <a href="{{path('blog_show', {'id': article.id}) }}">en savoir plus</a><br/><a href="{{path('blog_article')}}">Editer</a>
+    </article>
+    <article class="show">
+        <h1 class="titre">{{article.title}}</h1>
+        <div class="image"><img src="{{article.image}}"/>
+        <p class="slug">{{article.content}}</p>
+        <small>Ecrit le {{article.createdAt | date('d/m/y')}} à {{article.createdAt | date('H:i')}} </small>
+         <a href="{{path('blog_show', {'id': article.id}) }}">en savoir plus</a><br/><a href="{{path('blog_article')}}">Editer</a>
+    </article>
+    <article class="show">
+        <h1 class="titre">{{article.title}}</h1>
+        <div class="image"><img src="{{article.image}}"/>
+        <p class="slug">{{article.content}}</p>
+        <small>Ecrit le {{article.createdAt | date('d/m/y')}} à {{article.createdAt | date('H:i')}} </small>
+         <a href="{{path('blog_show', {'id': article.id}) }}">en savoir plus</a><br/><a href="{{path('blog_article')}}">Editer</a>
+    </article>
+    <article class="show">
+        <h1 class="titre">{{article.title}}</h1>
+        <div class="image"><img src="{{article.image}}"/>
+        <p class="slug">{{article.content}}</p>
+        <small>Ecrit le {{article.createdAt | date('d/m/y')}} à {{article.createdAt | date('H:i')}} </small>
+         <a href="{{path('blog_show', {'id': article.id}) }}">en savoir plus</a><br/><a href="{{path('blog_article')}}">Editer</a>
+    </article>
+    <article class="show">
+        <h1 class="titre">{{article.title}}</h1>
+        <div class="image"><img src="{{article.image}}"/>
+        <p class="slug">{{article.content}}</p>
+        <small>Ecrit le {{article.createdAt | date('d/m/y')}} à {{article.createdAt | date('H:i')}} </small>
+         <a href="{{path('blog_show', {'id': article.id}) }}">en savoir plus</a><br/><a href="{{path('blog_article')}}">Editer</a>
+    </article>
+</section>
+{% endblock %}

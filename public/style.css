@@ -1,0 +1,12 @@
+.show{
+    width: 40%;
+}
+.categorie{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.slug{
+    width: 40%;
+    
+}
